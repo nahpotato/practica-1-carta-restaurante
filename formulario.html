@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario</title>
+  <link rel="stylesheet" href="css/formulario.css">
+</head>
+
+<body>
+  <div id="app" class="general-font-settings" style="margin-top: -20px;">
+    <form action="formulario.js" method="post">
+
+      <p class="margin-vertical-20"><strong class="negrita">¿De dónde sos?</strong></p>
+      <select name="pais" id="pais">
+        <option value="none">Seleccioná una opción</option>
+        <option value="ar">Argentina</option>
+        <option value="br">Brasil</option>
+        <option value="ur">Uruguay</option>
+      </select>
+
+      <p class="margin-vertical-20"><strong class="negrita">¿Qué te pareció la iluminación del ambiente?</strong></p>
+      <input type="checkbox" name="iluminación" id="acorde" value="acorde">
+      <label for="acorde">Muy acorde</label><br>
+      <input type="checkbox" name="iluminación" id="buena" value="buena">
+      <label for="buena">Buena, pero podría mejorar</label><br>
+      <input type="checkbox" name="iluminación" id="mala" value="mala">
+      <label for="mala">Mala</label><br>
+
+      <p class="margin-vertical-20"><strong class="negrita">¿Qué tipo de plato fue el que más te gustó?</strong></p>
+      <input type="checkbox" name="plato" id="entrada" value="entrada">
+      <label for="entrada">Entrada</label><br>
+      <input type="checkbox" name="plato" id="plato-ppal" value="plato-ppal">
+      <label for="plato-ppal">Plato principal</label><br>
+      <input type="checkbox" name="plato" id="postre" value="postre">
+      <label for="postre">Postre</label><br>
+      <input type="checkbox" name="plato" id="otros" value="otros">
+      <label for="otros">Otros</label><br>
+
+      <p class="margin-vertical-20"><strong class="negrita">¿Recomendarías el lugar?</strong></p>
+      <input type="radio" name="recomendar" id="si" value="si">
+      <label for="si">Sí</label>
+      <input type="radio" name="recomendar" id="no" value="no">
+      <label for="no">No</label>
+
+      <p class="margin-vertical-20"><strong class="negrita">¿Por qué?</strong></p>
+      <textarea name="por-que" cols="80" rows="10"></textarea>
+
+      <p class="margin-vertical-20"><strong class="negrita">Dejanos tus datos y nos pondremos en contacto con
+          vos</strong></p>
+      <label for="nombre">Nombre:</label>
+      <input type="text" name="contacto" id="nombre" placeholder="tu nombre"><br>
+      <label for="email">Email:</label>
+      <input type="text" name="contacto" id="email" placeholder="tu email"><br>
+
+      <button id="send-button" class="margin-vertical-20 button" type="submit">Enviar</button>
+      <button id="reset-button" class="margin-vertical-20 button" type="reset">Resetear</button>
+    </form>
+  </div>
+</body>
+
+</html>

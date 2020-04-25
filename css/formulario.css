@@ -1,0 +1,32 @@
+@import './style.css';
+
+#app {
+    padding: 0 50px;
+    border-left: 1px solid #E1A701;
+    border-right: 1px solid #E1A701;
+    display: table;
+    margin: 0 auto;
+}
+
+#send-button {
+    background-color: #E1A701;
+    border: 0;
+    color: white;
+}
+
+#reset-button {
+    border: 1px solid #E1A701;
+    background-color: white;
+    color: #E1A701;
+}
+
+.button {
+    border-radius: 10px;
+    padding: 4px;
+    width: 45%;
+}
+
+.margin-vertical-20 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
